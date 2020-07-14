@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	font-family: helvetica;
+}
+form{
+	display: flex;
+	justify-content: center;
+}
+
+input{
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 5px;
+	font-family: helvetica;
+	outline: none;
+	margin-right: 5px;
+}
+
+form button{
+	padding: 15px;
+	padding-left: 20px;
+	padding-right:20px;
+	color: #fff;
+	background-color: #000;
+	border: none;
+	border-radius: 7px;
+}
