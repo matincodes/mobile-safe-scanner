@@ -2,8 +2,8 @@
 session_start();
 header('location:index.php');
    //conect to database
- $db = mysqli_connect('localhost','root','') or die('could not connect to server');
-  mysqli_select_db($db, 'emailcapture');
+ $db = mysqli_connect('us-cdbr-east-02.cleardb.com','bbdd2dc118b6ba','2b2b65ea') or die('could not connect to server');
+  mysqli_select_db($db, 'heroku_014b48a931e6a57');
 //capture user's email 
  $email =  $_POST["email"];
 
