@@ -89,6 +89,7 @@ form button{
 	font-size: 22px;
 	line-height: 26px;
 	color: #296EC2;
+	outline: none;
 }
 
 .form-group label{
