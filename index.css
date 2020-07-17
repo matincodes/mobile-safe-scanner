@@ -112,9 +112,11 @@ form button{
 	right: 0;
 	top: 184px;
 }
-
-.images{
+.img-content{
 	margin-top: 20%;
+}
+.images{
+	margin-top: 10px;
 	display: flex;
 	justify-content: center;
 }
@@ -185,3 +187,15 @@ form button{
 		left:33px;
 	}
 }
+.click{
+	text-align: center;
+	text-transform: capitalize;
+	color: #fff;
+}
+/*.registered{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	font-size: 25px;
+	background: #fff; 
+}*/

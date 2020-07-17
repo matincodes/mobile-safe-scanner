@@ -28,7 +28,10 @@
 	  	 <div class="phone">
 	  	 	<img src="img/iPhone.png">
 	  	 </div>
-
+	  	 <div class="img-content">
+	  	 <div class="click">
+	  	 	<h3>click images to view app</h3>
+	  	 </div>
 	  	 <div class="images">
 	  	 	<img id="img1" onclick="toggle()" src="img/img1.png">
 	  	 	<img id="img2" onclick="toggle2()" src="img/img2.png">
@@ -36,6 +39,7 @@
 	  	 	<img id="img4" onclick="toggle4()" src="img/img4.png">
 	  	 	<img id="img5" onclick="toggle5()" src="img/img5.png">
 	  	 	<img id="img6" onclick="toggle6()" src="img/img6.png">
+	  	 </div>
 	  	 </div> 
   	 	</div>
   	 </section>
