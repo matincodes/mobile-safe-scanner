@@ -122,6 +122,7 @@ form button{
 }
 
 .container#blur.active{
+	width: 100%;
 	filter: blur(20px);
 	pointer-events: none;
 	user-select: none;
