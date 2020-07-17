@@ -57,11 +57,6 @@
 	  	 <div id="popup6">
 	  	 	<img onclick="toggle6()" src="img/popup6.png" width="360px">
 	  	 </div>
-	  	 <?php 
-	  	 	if (isset($_POST["button"])) {
-	  	 		# code...
-	  	 	}
-	  	  <?php endif ?>
   	 <script type="text/javascript" src="index.js"></script>
    </body>
  </html>
