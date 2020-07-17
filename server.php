@@ -4,7 +4,7 @@ header('location:index.php');
    //conect to database
 $host = "us-cdbr-east-02.cleardb.com";
 $username = "bbdd2dc118b6ba";
-$pasword = "2b2b65ea";
+$password = "2b2b65ea";
 $database = "heroku_014b48a931e6a57";
 $db = mysqli_connect($host,$username,$password) or die('could not connect to server');
   mysqli_select_db($db, $database);
@@ -25,7 +25,9 @@ $db = mysqli_connect($host,$username,$password) or die('could not connect to ser
  		}else{
  		  $query = "INSERT INTO user (email) VALUES ('$email')";
 			mysqli_query($db, $query);
-			echo "email captured";
+			echo "
+			<script> alert('You have Subscribed Succesfully');</script>
+			";
  		}
  	
  	

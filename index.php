@@ -1,11 +1,12 @@
  <!DOCTYPE html>
  <html>
  <head>
- 	<title>Mobile Safe Scanner</title>
+ 	<title>UltraApp</title>
  	<link rel="stylesheet" type="text/css" href="index.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
  </head>
  <body>
- 	<section class="container">
+ 	<section class="container" id="blur">
  		<div class="sub-container">
 	 	<header>
 	 		<nav class="logo">
@@ -22,13 +23,45 @@
 		 	 	<label>Email address</label>
 			 	<input type="email" name="email" placeholder="Enter Your Email">
 		 	</div>
-		 	<button>GET EARLY ACCESS</button>
+		 	<button name="button">GET EARLY ACCESS</button>
 	  	 </form>
 	  	 <div class="phone">
 	  	 	<img src="img/iPhone.png">
 	  	 </div>
+
+	  	 <div class="images">
+	  	 	<img id="img1" onclick="toggle()" src="img/img1.png">
+	  	 	<img id="img2" onclick="toggle2()" src="img/img2.png">
+	  	 	<img id="img3" onclick="toggle3()" src="img/img3.png">
+	  	 	<img id="img4" onclick="toggle4()" src="img/img4.png">
+	  	 	<img id="img5" onclick="toggle5()" src="img/img5.png">
+	  	 	<img id="img6" onclick="toggle6()" src="img/img6.png">
+	  	 </div> 
   	 	</div>
   	 </section>
+  	 	 <div id="popup">
+	  	 	<img onclick="toggle()" src="img/popup1.png">
+	  	 </div>
+	  	 <div id="popup2">
+	  	 	<img onclick="toggle2()" src="img/popup2.png">
+	  	 </div>
+	  	 <div id="popup3">
+	  	 	<img onclick="toggle3()" src="img/popup3.png" width="360px">
+	  	 </div>
+	  	 <div id="popup4">
+	  	 	<img onclick="toggle4()" src="img/popup4.png" width="360px">
+	  	 </div>
+	  	 <div id="popup5">
+	  	 	<img onclick="toggle5()" src="img/popup5.png" width="360px">
+	  	 </div>
+	  	 <div id="popup6">
+	  	 	<img onclick="toggle6()" src="img/popup6.png" width="360px">
+	  	 </div>
+	  	 <?php 
+	  	 	if (isset($_POST["button"])) {
+	  	 		# code...
+	  	 	}
+	  	  <?php endif ?>
+  	 <script type="text/javascript" src="index.js"></script>
    </body>
  </html>
- 

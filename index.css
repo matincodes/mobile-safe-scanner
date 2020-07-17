@@ -6,11 +6,10 @@
 
 .container{
 	width: 100%;
-	height: 100vh;
 	background: #296EC2;
+	font-family: 'Lato', sans-serif;
 }
 .sub-container{
-	height: 100vh;
 	background-image: url(./img/bg-img.png);
 	background-size: cover;
 	background-position: center;
@@ -53,6 +52,7 @@ h2{
 form{
 	display: flex;
 	justify-content: center;
+	padding-bottom: 50px;
 }
 
 .form-group{
@@ -70,7 +70,6 @@ input{
 	font-size: 16px;
 	outline: none;
 	margin-right: 5px;
-	font-family: Lato;
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 36px;
@@ -84,7 +83,6 @@ form button{
 	background: #88F1FF;
 	border-radius: 20px;
 	border: none;
-	font-family: Lato;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 26px;
@@ -101,7 +99,6 @@ form button{
 	padding-top: 5px;
 	background: #C4C4C4;
 	border-radius: 20px;
-	font-family: Lato;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
@@ -114,4 +111,77 @@ form button{
 	position: absolute;
 	right: 0;
 	top: 184px;
+}
+
+.images{
+	margin-top: 20%;
+	display: flex;
+	justify-content: center;
+}
+
+.container#blur.active{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+
+#popup,#popup2,#popup3,
+#popup4,#popup5,#popup6{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	width: 600px;
+	height: 900px;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:#fff; 
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#popup.active,#popup2.active,#popup3.active,#popup4.active,
+#popup5.active,#popup6.active{
+		z-index: 100;
+		top: 90%;
+		visibility: visible;
+		opacity: 1;
+		transition: 0.5s;
+}
+
+@media (max-width: 720px){
+	.images{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 60px;
+	}
+
+	.images img{
+		margin-bottom: 20px;
+		height: 460px;
+	}
+
+	.phone{
+		display: none;
+	}
+
+	form{
+		justify-content: center;
+		flex-direction: column;
+	}
+	input{
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	button{
+		margin: 0 auto;
+	}
+	.form-group label{
+		position: absolute;
+		left:33px;
+	}
 }
